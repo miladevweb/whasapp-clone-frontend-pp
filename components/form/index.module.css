@@ -1,0 +1,29 @@
+.container {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 80% 9%;
+   justify-content: center;
+   align-items: center;
+   column-gap: 12px;
+   background-color: #202c33;
+   & input {
+      border-radius: 0.5rem;
+      outline: none;
+      height: 50%;
+      padding-inline: 12px;
+      background-color: #2a3942;
+      &::placeholder {
+         opacity: 70%;
+      }
+   }
+   & button {
+      width: fit-content;
+      background-color: transparent;
+      display: grid;
+      place-items: center;
+      & svg {
+         width: 24px;
+         fill: #8696a0;
+      }
+   }
+}
